@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,9 +26,15 @@
 		6237328226365263000F86D8 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6237328126365263000F86D8 /* Detail.storyboard */; };
 		62373287263653A7000F86D8 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62373286263653A7000F86D8 /* HomeBuilder.swift */; };
 		6237328A26365538000F86D8 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237328926365538000F86D8 /* DetailBuilder.swift */; };
+		8D9A927A24CC1F085CB427B6 /* Pods_Flag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375186F762E6BD470F04BC71 /* Pods_Flag.framework */; };
+		ED00407926384A26005D5EB2 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00407826384A26005D5EB2 /* Strings.swift */; };
+		ED00407C26384C45005D5EB2 /* XCAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00407B26384C45005D5EB2 /* XCAssets.swift */; };
+		ED4902CF263870D0008CA329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED4902CE263870D0008CA329 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		375186F762E6BD470F04BC71 /* Pods_Flag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4897B635BA9BCD066DE62B /* Pods-Flag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flag.release.xcconfig"; path = "Target Support Files/Pods-Flag/Pods-Flag.release.xcconfig"; sourceTree = "<group>"; };
 		6208F77626266C6600D224E4 /* Flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6208F77926266C6600D224E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6208F77B26266C6600D224E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,10 @@
 		6237328126365263000F86D8 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		62373286263653A7000F86D8 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		6237328926365538000F86D8 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		6B02D7FB9D9FD6772CE09F79 /* Pods-Flag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flag.debug.xcconfig"; path = "Target Support Files/Pods-Flag/Pods-Flag.debug.xcconfig"; sourceTree = "<group>"; };
+		ED00407826384A26005D5EB2 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		ED00407B26384C45005D5EB2 /* XCAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCAssets.swift; sourceTree = "<group>"; };
+		ED4902CE263870D0008CA329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +72,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9A927A24CC1F085CB427B6 /* Pods_Flag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9EDF268638A5B0887CDC39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375186F762E6BD470F04BC71 /* Pods_Flag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6208F76D26266C6600D224E4 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +94,8 @@
 				6208F78F26266C6700D224E4 /* FlagTests */,
 				6208F79A26266C6700D224E4 /* FlagUITests */,
 				6208F77726266C6600D224E4 /* Products */,
+				CDF0062F6D9DEB9DC5D93EBC /* Pods */,
+				2F9EDF268638A5B0887CDC39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +110,7 @@
 		6208F77826266C6600D224E4 /* Flag */ = {
 			isa = PBXGroup;
 			children = (
+				ED004076263849F3005D5EB2 /* Generated */,
 				6237322926364A17000F86D8 /* Code */,
 				6208F7B326266FDD00D224E4 /* Resources */,
 				6208F77926266C6600D224E4 /* AppDelegate.swift */,
@@ -96,6 +118,7 @@
 				6208F77D26266C6600D224E4 /* Router.swift */,
 				6208F78426266C6700D224E4 /* LaunchScreen.storyboard */,
 				6208F78726266C6700D224E4 /* Info.plist */,
+				ED4902CE263870D0008CA329 /* GoogleService-Info.plist */,
 			);
 			path = Flag;
 			sourceTree = "<group>";
@@ -171,6 +194,24 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		CDF0062F6D9DEB9DC5D93EBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B02D7FB9D9FD6772CE09F79 /* Pods-Flag.debug.xcconfig */,
+				4B4897B635BA9BCD066DE62B /* Pods-Flag.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED004076263849F3005D5EB2 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				ED00407B26384C45005D5EB2 /* XCAssets.swift */,
+				ED00407826384A26005D5EB2 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +219,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6208F7A026266C6700D224E4 /* Build configuration list for PBXNativeTarget "Flag" */;
 			buildPhases = (
+				A062C1888E1E0753E309A5D5 /* [CP] Check Pods Manifest.lock */,
+				ED004053263836A7005D5EB2 /* Run SwiftLint */,
+				ED004052263836A5005D5EB2 /* Run SwiftGen */,
 				6208F77226266C6600D224E4 /* Sources */,
 				6208F77326266C6600D224E4 /* Frameworks */,
 				6208F77426266C6600D224E4 /* Resources */,
+				18498CEB7C31BE2211E54BBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,10 +280,89 @@
 				6237327B2636524D000F86D8 /* Home.storyboard in Resources */,
 				6237328226365263000F86D8 /* Detail.storyboard in Resources */,
 				6208F7B52626700200D224E4 /* Flags.xcassets in Resources */,
+				ED4902CF263870D0008CA329 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18498CEB7C31BE2211E54BBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A062C1888E1E0753E309A5D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED004052263836A5005D5EB2 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		ED004053263836A7005D5EB2 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6208F77226266C6600D224E4 /* Sources */ = {
@@ -250,7 +374,9 @@
 				6237325526364A7A000F86D8 /* HomeViewModel.swift in Sources */,
 				6237325F26364A99000F86D8 /* HomeCell.swift in Sources */,
 				6237323E26364A17000F86D8 /* Detail.swift in Sources */,
+				ED00407C26384C45005D5EB2 /* XCAssets.swift in Sources */,
 				6237326426364AA5000F86D8 /* DetailViewModel.swift in Sources */,
+				ED00407926384A26005D5EB2 /* Strings.swift in Sources */,
 				6208F77E26266C6600D224E4 /* Router.swift in Sources */,
 				6208F77A26266C6600D224E4 /* AppDelegate.swift in Sources */,
 				6208F77C26266C6600D224E4 /* SceneDelegate.swift in Sources */,
@@ -404,16 +530,55 @@
 		};
 		6208F7A126266C6700D224E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B02D7FB9D9FD6772CE09F79 /* Pods-Flag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87663B9S89;
 				INFOPLIST_FILE = Flag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = basic.Flag;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurentcheng.Flag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,16 +587,55 @@
 		};
 		6208F7A226266C6700D224E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4897B635BA9BCD066DE62B /* Pods-Flag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87663B9S89;
 				INFOPLIST_FILE = Flag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = basic.Flag;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurentcheng.Flag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

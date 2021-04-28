@@ -1,0 +1,15 @@
+ strings:
+   inputs:
+     - Flag/Resources/en.lproj
+   outputs:
+     - templateName: structured-swift5
+       output: Flag/Generated/Strings.swift
+ xcassets:
+   inputs:
+     - Flag/Resources/Assets.xcassets
+     - Flag/Resources/Flags.xcassets
+   outputs:
+     - templateName: swift5
+       params:
+         forceProvidesNamespaces: true
+       output: Flag/Generated/XCAssets.swift
