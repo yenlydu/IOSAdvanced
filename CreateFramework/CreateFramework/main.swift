@@ -50,6 +50,17 @@ struct CreateFrameworks: ParsableCommand {
     {
         do {
             try FileManager.default.copyItem(atPath: "../Template/Template/", toPath: defaultPath + "/\(name)")
+            let items = try FileManager.default.contentsOfDirectory(atPath: defaultPath + "/\(name)")
+
+            for item in items {
+                if (item.starts(with: "__TEMPLATE__")) {
+                    let newString = item.replacingOccurrences(of: "__TEMPLATE__", with: "__" + name.uppercased() + "__", options: .literal, range: nil)
+                    print("newString " + item + " " + newString)
+                    try FileManager.default.moveItem(atPath: defaultPath + "/\(name)/\(item)", toPath: defaultPath + "/\(name)/\(newString)")
+                }
+                print("Found \(item)")
+            }
+
         } catch(let error) {
             print(error)
         }
