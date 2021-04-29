@@ -15,7 +15,6 @@ struct CreateFrameworks: ParsableCommand {
     @Argument(help: "The name of the framework.")
     var name: String
 
-    
     func checkDirectoryExist(name: String) -> Int
     {
         let fileManager = FileManager.default
@@ -30,11 +29,12 @@ struct CreateFrameworks: ParsableCommand {
             return -1
         }
     }
+
     
     func createDirectory(defaultPath: String)
     {
-        let sourceCodeFolder = "../Flag/Code"
         let checkDirectory = checkDirectoryExist(name: defaultPath)
+        print (defaultPath)
         if (checkDirectory == -1) {
             do {
                 try FileManager.default.createDirectory(atPath: defaultPath, withIntermediateDirectories: true, attributes: nil)
@@ -45,10 +45,22 @@ struct CreateFrameworks: ParsableCommand {
             print ("A file or a directory already has this name.")
         }
     }
+    
+    func createFrameworkFolderContent(defaultPath: String)
+    {
+        do {
+            try FileManager.default.copyItem(atPath: "../Template/", toPath: defaultPath + "/\(name)")
+        } catch(let error) {
+            print(error)
+        }
 
+    }
+    
     func run() throws {
         let defaultPath = path ?? "../Frameworks/"
+
         createDirectory(defaultPath: defaultPath)
+        createFrameworkFolderContent(defaultPath: defaultPath)
     }
 }
 
