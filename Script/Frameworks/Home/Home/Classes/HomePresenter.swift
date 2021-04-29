@@ -1,7 +1,8 @@
 import UIKit
+import Core
+import L10n_swift
 
 public class HomePresenter {
-
     public func fetchFlags(onCompletion: (HomeViewModel) -> Void) {
         let viewModel = HomeViewModel(
             countries: [

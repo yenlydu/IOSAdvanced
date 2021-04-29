@@ -45,7 +45,7 @@ struct CreateFrameworks: ParsableCommand {
             print ("A file or a directory already has this name.")
         }
     }
-    
+
     func createFrameworkFolderContent(defaultPath: String)
     {
         do {
@@ -54,11 +54,9 @@ struct CreateFrameworks: ParsableCommand {
 
             for item in items {
                 if (item.starts(with: "__TEMPLATE__")) {
-                    let newString = item.replacingOccurrences(of: "__TEMPLATE__", with: "__" + name.uppercased() + "__", options: .literal, range: nil)
-                    print("newString " + item + " " + newString)
+                    let newString = item.replacingOccurrences(of: "__TEMPLATE__", with: name , options: .literal, range: nil)
                     try FileManager.default.moveItem(atPath: defaultPath + "/\(name)/\(item)", toPath: defaultPath + "/\(name)/\(newString)")
                 }
-                print("Found \(item)")
             }
 
         } catch(let error) {
@@ -69,9 +67,21 @@ struct CreateFrameworks: ParsableCommand {
     
     func run() throws {
         let defaultPath = path ?? "../Frameworks/"
-
         createDirectory(defaultPath: defaultPath)
         createFrameworkFolderContent(defaultPath: defaultPath)
+        if let filepath = Bundle.main.path(forResource: defaultPath + "/\(name)/\(name)", ofType: "podspec") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                let newString = contents.replacingOccurrences(of: "__TEMPLATE__", with: name, options: .literal, range: nil)
+                print("\(defaultPath)/\(name)/\(name)")
+                try newString.write(toFile: "\(defaultPath)/\(name)/\(name).podspec", atomically: true, encoding: String.Encoding.utf8)
+            } catch {
+                print("contents could not be loaded")
+            }
+        } else {
+            print ("not found")
+            // example.txt not found!
+        }
     }
 }
 

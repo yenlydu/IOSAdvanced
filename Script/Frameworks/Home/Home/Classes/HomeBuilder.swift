@@ -1,5 +1,6 @@
 import UIKit
-
+import Core
+    
 class HomeBuilder {
 
     func build() -> UIViewController {

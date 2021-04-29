@@ -7,4 +7,7 @@ target 'Flag' do
   pod 'Firebase/Performance'
   pod 'SwiftGen'
   pod 'SwiftLint'
+  pod 'Detail', :path => '../Script/Frameworks/Detail/'
+  pod 'Core', :path => '../Script/Frameworks/Core/'
+  pod 'Home', :path => '../Script/Frameworks/Home/'
 end
