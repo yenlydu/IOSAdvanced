@@ -49,7 +49,7 @@ struct CreateFrameworks: ParsableCommand {
     func createFrameworkFolderContent(defaultPath: String)
     {
         do {
-            try FileManager.default.copyItem(atPath: "../Template/", toPath: defaultPath + "/\(name)")
+            try FileManager.default.copyItem(atPath: "../Template/Template/", toPath: defaultPath + "/\(name)")
         } catch(let error) {
             print(error)
         }
