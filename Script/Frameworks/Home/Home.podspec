@@ -14,7 +14,5 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Home/Classes/**/*'
-  s.dependency 'L10n-swift'
   s.dependency 'Core'
-
 end

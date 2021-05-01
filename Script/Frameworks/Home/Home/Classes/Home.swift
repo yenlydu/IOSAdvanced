@@ -1,10 +1,9 @@
 import UIKit
-import FirebaseAnalytics
 
 public class Home: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
-
+    
     public var viewModel: HomeViewModel!
     public var router: HomeViewRouting!
     public var presenter: HomePresenter!
@@ -16,13 +15,6 @@ public class Home: UIViewController {
             self?.tableView.reloadData()
         }
     }
-    
-    override public func viewWillAppear(_ animated: Bool) {
-        Analytics.logEvent(AnalyticsEventScreenView, parameters: [
-            "view": "Home",
-            "event": "viewWillAppear"
-        ])
-    }
 }
 
 extension Home: UITableViewDelegate {
@@ -30,11 +22,6 @@ extension Home: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let country = viewModel.countries[indexPath.row]
         let view = router.getDetail(country: country)
-        Analytics.logEvent(AnalyticsEventSelectItem, parameters: [
-            "view": "Home",
-            "event": "onFlagSelection",
-            "selectedFlag": country.name
-        ])
         navigationController?.pushViewController(view, animated: true)
     }
 }

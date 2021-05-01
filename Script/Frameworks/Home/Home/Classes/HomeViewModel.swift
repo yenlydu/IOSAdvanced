@@ -7,7 +7,6 @@
 
 import Foundation
 import Core
-
 public class HomeViewModel {
 
     public let countries: [Country]

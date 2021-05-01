@@ -1,6 +1,5 @@
 import UIKit
 import Core
-
 public class HomeCell: UITableViewCell {
 
     @IBOutlet private weak var titleLabel: UILabel!

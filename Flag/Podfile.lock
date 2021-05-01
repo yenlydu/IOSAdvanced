@@ -102,16 +102,6 @@ PODS:
     - GoogleUtilities/Logger
   - Home (0.1.0):
     - Core
-    - L10n-swift
-  - L10n-swift (5.8.0):
-    - L10n-swift/Core (= 5.8.0)
-    - L10n-swift/Extension (= 5.8.0)
-    - L10n-swift/IBInspectable (= 5.8.0)
-  - L10n-swift/Core (5.8.0)
-  - L10n-swift/Extension (5.8.0):
-    - L10n-swift/Core
-  - L10n-swift/IBInspectable (5.8.0):
-    - L10n-swift/Core
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -144,7 +134,6 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - L10n-swift
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -173,8 +162,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: fd19169c3034975cb934e865e5667bfdce59df7f
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
   GoogleUtilities: 284cddc7fffc14ae1907efb6f78ab95c1fccaedc
-  Home: 930cbda44f5a099ffeb5515c3cda5faec6492904
-  L10n-swift: 80e7e9c13521bcfb8f2fb0cf2ae08199efeb1ec6
+  Home: bbcceb908a54a917e4143f9da99700fcf62be951
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: adb85cd18a15bd1a777c158af9fd6e612a0e6d69
