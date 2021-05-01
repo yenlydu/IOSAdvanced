@@ -12,17 +12,7 @@
 		1881CFC4263D9A5600F9F176 /* XCAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBC2263D9A5400F9F176 /* XCAssets.swift */; };
 		1881CFCB263D9A5600F9F176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBCE263D9A5400F9F176 /* AppDelegate.swift */; };
 		1881CFCD263D9A5600F9F176 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBD0263D9A5400F9F176 /* SceneDelegate.swift */; };
-		1881CFD0263D9A5600F9F176 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBD5263D9A5400F9F176 /* HomeViewModel.swift */; };
-		1881CFD1263D9A5600F9F176 /* HomeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBD6263D9A5400F9F176 /* HomeRouting.swift */; };
-		1881CFD2263D9A5600F9F176 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBD7263D9A5400F9F176 /* HomeCell.swift */; };
-		1881CFD3263D9A5600F9F176 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBD8263D9A5400F9F176 /* Home.swift */; };
-		1881CFD5263D9A5600F9F176 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBDA263D9A5400F9F176 /* HomeBuilder.swift */; };
-		1881CFD6263D9A5600F9F176 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBDB263D9A5400F9F176 /* HomePresenter.swift */; };
-		1881CFD7263D9A5600F9F176 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBDD263D9A5400F9F176 /* Country.swift */; };
-		1881CFD8263D9A5600F9F176 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBDF263D9A5400F9F176 /* DetailBuilder.swift */; };
 		1881CFDB263D9A5600F9F176 /* DetailStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBE2263D9A5400F9F176 /* DetailStoryboard.swift */; };
-		1881CFDE263D9A5600F9F176 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBE5263D9A5400F9F176 /* Detail.swift */; };
-		1881CFDF263D9A5600F9F176 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBE6263D9A5400F9F176 /* DetailViewModel.swift */; };
 		1881CFE0263D9A5600F9F176 /* FIRConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBEF263D9A5400F9F176 /* FIRConfiguration.m */; };
 		1881CFE1263D9A5600F9F176 /* FIRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBF0263D9A5400F9F176 /* FIRApp.m */; };
 		1881CFE2263D9A5600F9F176 /* FIROptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CBF1263D9A5400F9F176 /* FIROptions.m */; };
@@ -176,7 +166,6 @@
 		1881D0FD263D9A5700F9F176 /* FPRNSURLSessionInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEE6263D9A5600F9F176 /* FPRNSURLSessionInstrument.m */; };
 		1881D0FE263D9A5700F9F176 /* FPRNetworkInstrumentHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEE9263D9A5600F9F176 /* FPRNetworkInstrumentHelpers.m */; };
 		1881D0FF263D9A5700F9F176 /* FPRNSURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEEB263D9A5600F9F176 /* FPRNSURLSessionDelegate.m */; };
-		1881D100263D9A5700F9F176 /* FPRNSURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEEE263D9A5600F9F176 /* FPRNSURLConnectionDelegate.m */; };
 		1881D101263D9A5700F9F176 /* FPRNSURLSessionDelegateInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEEF263D9A5600F9F176 /* FPRNSURLSessionDelegateInstrument.m */; };
 		1881D102263D9A5700F9F176 /* FPRNSURLConnectionDelegateInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEF2263D9A5600F9F176 /* FPRNSURLConnectionDelegateInstrument.m */; };
 		1881D103263D9A5700F9F176 /* FPRClassInstrumentor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881CEF5263D9A5600F9F176 /* FPRClassInstrumentor.m */; };
@@ -4002,8 +3991,6 @@
 				1881D07E263D9A5700F9F176 /* RCNDevice.m in Sources */,
 				1881D087263D9A5700F9F176 /* RCNConfigExperiment.m in Sources */,
 				1881D11E263D9A5700F9F176 /* GPBType.pbobjc.m in Sources */,
-				1881CFD1263D9A5600F9F176 /* HomeRouting.swift in Sources */,
-				1881D100263D9A5700F9F176 /* FPRNSURLConnectionDelegate.m in Sources */,
 				1881D098263D9A5700F9F176 /* FIRInstallationsBackoffController.m in Sources */,
 				1881D12B263D9A5700F9F176 /* GPBApi.pbobjc.m in Sources */,
 				1881D014263D9A5600F9F176 /* GDTCORFlatFileStorage+Promises.m in Sources */,
@@ -4011,9 +3998,7 @@
 				1881D116263D9A5700F9F176 /* FPRMemoryGaugeCollector.m in Sources */,
 				1881D092263D9A5700F9F176 /* FIRInstallationsAuthTokenResult.m in Sources */,
 				ED00407C26384C45005D5EB2 /* XCAssets.swift in Sources */,
-				1881CFDF263D9A5600F9F176 /* DetailViewModel.swift in Sources */,
 				1881D078263D9A5700F9F176 /* ABTConditionalUserPropertyController.m in Sources */,
-				1881CFD6263D9A5600F9F176 /* HomePresenter.swift in Sources */,
 				1881D0D2263D9A5700F9F176 /* GULLogger.m in Sources */,
 				1881CFE7263D9A5600F9F176 /* FIRCoreDiagnosticsConnector.m in Sources */,
 				1881D110263D9A5700F9F176 /* FPRSessionManager.m in Sources */,
@@ -4038,7 +4023,6 @@
 				1881CFEB263D9A5600F9F176 /* FIRLogger.m in Sources */,
 				1881D109263D9A5700F9F176 /* FPRInstrumentation.m in Sources */,
 				1881D00F263D9A5600F9F176 /* GDTCORLifecycle.m in Sources */,
-				1881CFDE263D9A5600F9F176 /* Detail.swift in Sources */,
 				1881D09E263D9A5700F9F176 /* FIRInstallationsStore.m in Sources */,
 				1881D0DF263D9A5700F9F176 /* GULHeartbeatDateStorage.m in Sources */,
 				1881CFCD263D9A5600F9F176 /* SceneDelegate.swift in Sources */,
@@ -4060,7 +4044,6 @@
 				1881D00C263D9A5600F9F176 /* GDTCCTUploader.m in Sources */,
 				1881D102263D9A5700F9F176 /* FPRNSURLConnectionDelegateInstrument.m in Sources */,
 				1881D023263D9A5700F9F176 /* Home-dummy.m in Sources */,
-				1881CFD0263D9A5600F9F176 /* HomeViewModel.swift in Sources */,
 				1881D113263D9A5700F9F176 /* FPRAppActivityTracker.m in Sources */,
 				1881CFFB263D9A5600F9F176 /* FBLPromise+Any.m in Sources */,
 				ED00407926384A26005D5EB2 /* Strings.swift in Sources */,
@@ -4084,7 +4067,6 @@
 				1881D12D263D9A5700F9F176 /* GPBUnknownField.m in Sources */,
 				1881D0FC263D9A5700F9F176 /* FPRNSURLConnectionInstrument.m in Sources */,
 				1881D0F1263D9A5700F9F176 /* FPRURLFilter.m in Sources */,
-				1881CFD3263D9A5600F9F176 /* Home.swift in Sources */,
 				1881CFE0263D9A5600F9F176 /* FIRConfiguration.m in Sources */,
 				1881D016263D9A5600F9F176 /* GDTCORUploadBatch.m in Sources */,
 				1881D124263D9A5700F9F176 /* GPBWireFormat.m in Sources */,
@@ -4115,12 +4097,10 @@
 				1881D0FA263D9A5700F9F176 /* FPRSelectorInstrumentor.m in Sources */,
 				1881D0F3263D9A5700F9F176 /* FPRGDTEvent.m in Sources */,
 				1881D122263D9A5700F9F176 /* GPBMessage.m in Sources */,
-				1881CFD5263D9A5600F9F176 /* HomeBuilder.swift in Sources */,
 				1881D03C263D9A5700F9F176 /* FirebaseCoreDiagnostics-dummy.m in Sources */,
 				1881D0F6263D9A5700F9F176 /* FPRClient.m in Sources */,
 				1881D0F2263D9A5700F9F176 /* FPRGDTLogger.m in Sources */,
 				1881D053263D9A5700F9F176 /* GoogleUtilities-dummy.m in Sources */,
-				1881CFD7263D9A5600F9F176 /* Country.swift in Sources */,
 				1881D09C263D9A5700F9F176 /* FIRInstallationsStoredAuthToken.m in Sources */,
 				1881D127263D9A5700F9F176 /* GPBUnknownFieldSet.m in Sources */,
 				1881D0E3263D9A5700F9F176 /* GULSwizzledObject.m in Sources */,
@@ -4140,7 +4120,6 @@
 				1881CFEF263D9A5600F9F176 /* FIRDependency.m in Sources */,
 				1881CFE3263D9A5600F9F176 /* FIRAppAssociationRegistration.m in Sources */,
 				1881D0DA263D9A5700F9F176 /* GULSecureCoding.m in Sources */,
-				1881CFD8263D9A5600F9F176 /* DetailBuilder.swift in Sources */,
 				1881D018263D9A5600F9F176 /* GDTCOREndpoints.m in Sources */,
 				1881CFE6263D9A5600F9F176 /* FIRVersion.m in Sources */,
 				1881D0D9263D9A5700F9F176 /* GULAppDelegateSwizzler.m in Sources */,
@@ -4203,7 +4182,6 @@
 				1881D131263D9A5700F9F176 /* GPBFieldMask.pbobjc.m in Sources */,
 				1881D10F263D9A5700F9F176 /* FPRConsoleLogger.m in Sources */,
 				1881D06E263D9A5700F9F176 /* Pods-Flag-dummy.m in Sources */,
-				1881CFD2263D9A5600F9F176 /* HomeCell.swift in Sources */,
 				1881D0E6263D9A5700F9F176 /* pb_decode.c in Sources */,
 				1881D001263D9A5600F9F176 /* FBLPromise+Recover.m in Sources */,
 				1881CFFA263D9A5600F9F176 /* FBLPromise+Timeout.m in Sources */,
