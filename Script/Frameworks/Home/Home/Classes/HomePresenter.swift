@@ -1,6 +1,6 @@
 import UIKit
-import Core
 import L10n_swift
+import Core
 
 public class HomePresenter {
     public func fetchFlags(onCompletion: (HomeViewModel) -> Void) {

@@ -1,8 +1,7 @@
 import UIKit
 import Core
-    
-class HomeBuilder {
 
+class HomeBuilder {
     func build() -> UIViewController {
         let router = Router()
         let presenter = HomePresenter()
