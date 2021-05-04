@@ -1,4 +1,4 @@
-# __TEMPLATE__
+# Core
 
 ## Example
 
@@ -8,11 +8,11 @@ To run the module project,  run `pod gen` from the directory where the podspec l
 
 ## Installation
 
-__TEMPLATE__ is available locally through [CocoaPods](https://cocoapods.org). To install
+Core is available locally through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```
-pod '__TEMPLATE__', :path => './Code/__TEMPLATE__'
+pod 'Core', :path => './Code/Core'
 ```
 
 ## Author
