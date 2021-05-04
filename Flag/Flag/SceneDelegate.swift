@@ -1,4 +1,6 @@
 import UIKit
+import Home
+import Detail
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
