@@ -114,11 +114,11 @@ PODS:
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - Core (from `../Frameworks/Core/`)
-  - Detail (from `../Frameworks/Detail/`)
+  - Core (from `../Script/Frameworks/Core/`)
+  - Detail (from `../Script/Frameworks/Detail/`)
   - Firebase/Analytics
   - Firebase/Performance
-  - Home (from `../Frameworks/Home/`)
+  - Home (from `../Script/Frameworks/Home/`)
   - SwiftGen
   - SwiftLint
 
@@ -143,11 +143,11 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Core:
-    :path: "../Frameworks/Core/"
+    :path: "../Script/Frameworks/Core/"
   Detail:
-    :path: "../Frameworks/Detail/"
+    :path: "../Script/Frameworks/Detail/"
   Home:
-    :path: "../Frameworks/Home/"
+    :path: "../Script/Frameworks/Home/"
 
 SPEC CHECKSUMS:
   Core: 4f3ff486995f3dfa210bfc6fe2029df7eb32020f
@@ -170,6 +170,6 @@ SPEC CHECKSUMS:
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: c77ed93b614364ffdec3b4e6065b46993cb97520
+PODFILE CHECKSUM: 79443cf41f627cbfb6901fe15dfd749c712bd4e8
 
 COCOAPODS: 1.10.1

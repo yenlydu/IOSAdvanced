@@ -158,7 +158,7 @@
 				6208F77326266C6600D224E4 /* Frameworks */,
 				6208F77426266C6600D224E4 /* Resources */,
 				74B70A96CF32B27766298267 /* [CP] Embed Pods Frameworks */,
-				86BDD3C551FFABC8433DDDFF /* [CP] Copy Pods Resources */,
+				0D52B562738CC952433387EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +218,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D52B562738CC952433387EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4C6E2B66A324161860DD4090 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,23 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86BDD3C551FFABC8433DDDFF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flag/Pods-Flag-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED004052263836A5005D5EB2 /* Run SwiftGen */ = {
