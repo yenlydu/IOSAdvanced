@@ -1,4 +1,7 @@
 import UIKit
+import Home
+import Detail
+import Core
 
 struct Router: HomeViewRouting {
 

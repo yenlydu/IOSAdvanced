@@ -2,8 +2,10 @@ import UIKit
 import Core
 
 public class DetailBuilder {
+    
+    public init() {}
 
-    func build(country: Country) -> UIViewController {
+    public func build(country: Country) -> UIViewController {
         let storyboard = UIStoryboard(name: "Detail", bundle: Bundle(for: DetailBuilder.self))
         let viewController = storyboard.instantiateViewController(identifier: "Detail") as! Detail
 
