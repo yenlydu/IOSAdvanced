@@ -1,0 +1,37 @@
+name: Flag
+
+## options section ##
+
+options:
+ bundleIdPrefix: com.laurentcheng
+ deploymentTarget: '13.0'
+ groupSortPosition: top
+ generateEmptyDirectories: true
+
+## targets section ##
+
+targets:
+ Flag:
+  type: application
+  platform: iOS
+  deploymentTarget: 13.0
+  settings:
+   base:
+    MARKETING_VERSION: 1.0
+  sources:
+   - path: ../Flag
+  postCompileScripts:
+   - script: |
+             if which swiftlint >/dev/null; then
+              "${PODS_ROOT}/SwiftLint/swiftlint"
+             else
+              echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+             fi
+     name: Run SwiftLint
+   - script: |
+             if [[ -f "${PODS_ROOT}/SwiftGen/bin/swiftgen" ]]; then
+              "${PODS_ROOT}/SwiftGen/bin/swiftgen"
+             else
+              echo "warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it."
+             fi
+     name: Run SwiftGen
