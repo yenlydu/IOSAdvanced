@@ -13,6 +13,7 @@
 		6208F78626266C6700D224E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6208F78426266C6700D224E4 /* LaunchScreen.storyboard */; };
 		6208F7B52626700200D224E4 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6208F7B42626700200D224E4 /* Flags.xcassets */; };
 		6208F7E926267B7000D224E4 /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6208F7E726267B7000D224E4 /* Localize.strings */; };
+		7BAF2893264DA87C0073E211 /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF2892264DA87C0073E211 /* RCValues.swift */; };
 		D8AB081BD33917E39945B5C8 /* Pods_Flag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC0DB443091C8EABA3B0EA3 /* Pods_Flag.framework */; };
 		ED00407926384A26005D5EB2 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00407826384A26005D5EB2 /* Strings.swift */; };
 		ED00407C26384C45005D5EB2 /* XCAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00407B26384C45005D5EB2 /* XCAssets.swift */; };
@@ -36,6 +37,7 @@
 		6208F7B42626700200D224E4 /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 		6208F7E826267B7000D224E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localize.strings; sourceTree = "<group>"; };
 		6208F7ED26267B8A00D224E4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localize.strings; sourceTree = "<group>"; };
+		7BAF2892264DA87C0073E211 /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
 		98E0AE5F36D5882E2975310D /* Pods-Flag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flag.release.xcconfig"; path = "Target Support Files/Pods-Flag/Pods-Flag.release.xcconfig"; sourceTree = "<group>"; };
 		ED00407826384A26005D5EB2 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		ED00407B26384C45005D5EB2 /* XCAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCAssets.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				6208F77926266C6600D224E4 /* AppDelegate.swift */,
 				6208F77B26266C6600D224E4 /* SceneDelegate.swift */,
 				EDE93254264289FB001A2287 /* Router.swift */,
+				7BAF2892264DA87C0073E211 /* RCValues.swift */,
 				6208F78426266C6700D224E4 /* LaunchScreen.storyboard */,
 				EDE9325626428A95001A2287 /* GoogleService-Info.plist */,
 				6208F78726266C6700D224E4 /* Info.plist */,
@@ -319,6 +322,7 @@
 			files = (
 				ED00407C26384C45005D5EB2 /* XCAssets.swift in Sources */,
 				ED00407926384A26005D5EB2 /* Strings.swift in Sources */,
+				7BAF2893264DA87C0073E211 /* RCValues.swift in Sources */,
 				EDE93255264289FB001A2287 /* Router.swift in Sources */,
 				6208F77A26266C6600D224E4 /* AppDelegate.swift in Sources */,
 				6208F77C26266C6600D224E4 /* SceneDelegate.swift in Sources */,
