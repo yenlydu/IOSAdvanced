@@ -5,7 +5,7 @@ target 'Flag' do
   use_frameworks!
   pod 'Firebase/Analytics'
   pod 'Firebase/Performance'
-	pod 'Firebase/RemoteConfig'
+  pod 'Firebase/RemoteConfig'
   pod 'SwiftGen'
   pod 'SwiftLint'
   pod 'Detail', :path => '../Script/Frameworks/Detail/'
