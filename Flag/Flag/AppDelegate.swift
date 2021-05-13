@@ -6,6 +6,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+		_ = RCValues.sharedInstance
+		Installations.installations().authToken { result, _ in
+		  print("Your instance ID token is \(result?.authToken ?? "n/a")")
+		}
         return true
     }
 

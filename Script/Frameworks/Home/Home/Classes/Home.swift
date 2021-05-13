@@ -53,9 +53,11 @@ extension Home: UITableViewDelegate {
         Analytics.logEvent(AnalyticsEventSelectItem, parameters: [
             "view": "Home",
             "event": "onFlagSelection",
-            "selectedFlag": country.name
+			"selectedFlag": country.name
         ])
-        navigationController?.pushViewController(view, animated: true)
+		print("ICICICICICICICICICI")
+		Analytics.logEvent("AnalyticsEventSelectCountry", parameters: nil)
+		navigationController?.pushViewController(view, animated: true)
     }
 }
 
