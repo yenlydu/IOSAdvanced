@@ -13,7 +13,7 @@ To modify the project's paramaters or add frameworks or dependencies, edit the p
 
 To create or update Flag.xcodeproj file run the following command inside this directory:
 
-"xcodegen -s ./XcodeGen/project.yml -p ./"
+"xcodegen -s ./project.yml -p ./"
 
 
 Once you have run the xcodegen command, you may encouter the following error: "Multiple commands produce '....'".
