@@ -31,14 +31,14 @@ public class Home: UIViewController {
         guard let metric = HTTPMetric(url: url, httpMethod: .get) else { return }
 
         metric.start()
-        let request: URLRequest = URLRequest(url:url)
+        let request: URLRequest = URLRequest(url: url)
         let session = URLSession(configuration: .default)
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-            let dataTask = session.dataTask(with: request) { (urlData, response, error) in
+            let dataTask = session.dataTask(with: request) { (data, response, error) in
                 if let httpResponse = response as? HTTPURLResponse {
                     metric.responseCode = httpResponse.statusCode
-                    metric.stop()
                 }
+                metric.stop()
             }
             dataTask.resume()
         }
