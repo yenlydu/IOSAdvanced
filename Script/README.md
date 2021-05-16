@@ -17,4 +17,4 @@ Step to follow:
    - Open Flag/Podfile
    - In the section "target '__TEMPLATE__' do", please add "pod '__YOUR_FRAMEWORK__', :path => '__PATH_TO_PODSPEC__'
    - Add wanted source code files manually
-   - Do pod install
+   - Do pod install where the Podfile is
