@@ -62,8 +62,6 @@ struct CreateFrameworks: ParsableCommand {
         content = content.replacingOccurrences(of: "__TEMPLATE__", with: name, options: .literal, range: nil)
         if (!content.isEmpty) {
             do {
-                print ("--------------CONTENT--------------" )
-                print (content)
                 try content.write(toFile: modifiedFileName, atomically: true, encoding: String.Encoding.utf8)
             } catch (let error) {
                 print(error.localizedDescription)
