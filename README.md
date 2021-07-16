@@ -1,5 +1,10 @@
 # ios-course-advanced
 
+- Swift command line file
+- SwiftLint
+- SwiftGen
+- Firebase (Analytics, Performance)
+
 ## Flag
 
 Copy the Flag directory into your own github repository and commit/push it as first initial commit.
